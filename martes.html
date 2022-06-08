@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1."> -->
+	<link rel="stylesheet" type="text/css" href="martes.css">
+	<title>Objetos en JS</title>
+</head>
+<body>
+	<h1>Otra manera de trabajar</h1>
+	<h1> con JSON y AC</h1>
+	<div id="target"></div>
+	<script>
+		let data={
+			"response":{
+				"docs":[
+				{"id":1,
+				"nombre":"Canelita",
+				"real":"Isabelle",
+				"poderes":"Perro",
+				"imagen":"cyclops.png"},
+				{"id":2,
+				"nombre":"Tom Nook",
+				"real":"Tom Nook",
+				"poderes":"Mapache",
+				"imagen":"goose.png"},
+				{"id":3,
+				"nombre":"Tendo y Nendo",
+				"real":"Tommy & Timmy",
+				"poderes":"Mapachitos",
+				"imagen":"3.png"},
+				{"id":4,
+				"nombre":"Totakeke",
+				"real":"K.K",
+				"poderes":"Perro Musico",
+				"imagen":"keykey.png"},
+				{"id":5,
+				"nombre":"Lili",
+				"real":"Lily",
+				"poderes":"Rana",
+				"imagen":"5.png"},
+				{"id":6,
+				"nombre":"Tere",
+				"real":"Goldie",
+				"poderes":"Perro",
+				"imagen":"6.png"},
+				{"id":7,
+				"nombre":"Coco",
+				"real":"Coco",
+				"poderes":"??",
+				"imagen":"7.png"},
+				{"id":8,
+				"nombre":"Deira",
+				"real":"Molly",
+				"poderes":"Pato",
+				"imagen":"8.png"},
+				{"id":9,
+				"nombre":"Pipo",
+				"real":"Biff",
+				"poderes":"Hipopotamo",
+				"imagen":"9.png"},
+				{"id":10,
+				"nombre":"Montse",
+				"real":"Shari",
+				"poderes":"Mono",
+				"imagen":"10.png"},
+				{"id":11,
+				"nombre":"Rosezna",
+				"real":"Judy",
+				"poderes":"Oso",
+				"imagen":"11.png"},
+				{"id":12,
+				"nombre":"Olivia",
+				"real":"Olivia",
+				"poderes":"Gato",
+				"imagen":"12.png"},
+				{"id":13,
+				"nombre":"Carla",
+				"real":"Pashmina",
+				"poderes":"Cabra",
+				"imagen":"13.png"},
+				{"id":14,
+				"nombre":"Belinda",
+				"real":"Peanut",
+				"poderes":"Ardilla",
+				"imagen":"14.png"},
+				{"id":15,
+				"nombre":"Zapiron",
+				"real":"Tom",
+				"poderes":"Gato",
+				"imagen":"15.png"},
+				{"id":16,
+				"nombre":"Kaiman",
+				"real":"Alfonso",
+				"poderes":"Cocodrilo",
+				"imagen":"16.png"},
+				{"id":17,
+				"nombre":"Azulino",
+				"real":"Julian",
+				"poderes":"Unicornio",
+				"imagen":"17.png"},
+				{"id":18,
+				"nombre":"Vesta",
+				"real":"Vesta",
+				"poderes":"Oveja",
+				"imagen":"18.png"},
+				{"id":19,
+				"nombre":"Munchi",
+				"real":"Marshal",
+				"poderes":"Ardilla",
+				"imagen":"19.png"},
+				{"id":20,
+				"nombre":"Paulino",
+				"real":"Zucker",
+				"poderes":"Pulpo",
+				"imagen":"20.png"}
+				]
+			}};
+			let target=document.querySelector('#target');
+			data=data.response.docs;
+			data.forEach((value, key)=>{
+				target.innerHTML+=` <div class="image-list">
+				<img src="${value.imagen}" class="image-styles" />
+				<p class="image-nombre">${value.nombre}</p>
+				<p class="image-real">${value.real}</p>
+				<p class="image-poderes">${value.poderes}</p>
+				</div>`
+			});
+
+	</script>	
+</body>
+</html>
